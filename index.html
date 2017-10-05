@@ -8,20 +8,41 @@
 <body>
  <div id="app">
    <v-app>
+   <v-navigation-drawer
+         persistent
+         clipped
+         app
+         v-model="drawer"
+       >
+        <span>Hello world</span>
+       <ul>
+         <li><router-link to="/foo">Go to Foo</router-link></li>
+         <li><router-link to="/bar">Go to Bar</router-link></li>
+         <li><router-link to="/here">Go to Here</router-link></li>
+       </ul>
+    </v-navigation-drawer>
+    <v-toolbar
+          class="blue darken-3"
+          dark
+          app
+          clipped-left
+          fixed
+        >
+          <v-toolbar-title style="width: 300px" class="ml-0 pl-3">
+                  <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
+                  Homepage
+                </v-toolbar-title>
+    </v-toolbar>
      <main>
-       <v-container>Hello world
-         <p>
-           <!-- use router-link component for navigation. -->
-           <!-- specify the link by passing the `to` prop. -->
-           <!-- `<router-link>` will be rendered as an `<a>` tag by default -->
-           <router-link to="/foo">Go to Foo</router-link>
-           <router-link to="/bar">Go to Bar</router-link>
-           <router-link to="/here">Go to Here</router-link>
-         </p>
+      <v-content>
+       <v-container fill-height>
+          
 
          <router-view></router-view>
    		</v-container>
+      </v-content>
      </main>
+    <v-footer></v-footer>
    </v-app>
  </div>
  

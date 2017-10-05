@@ -11,8 +11,10 @@ router = new VueRouter({
   routes // short for `routes: routes`
 })
 
-
 app = new Vue({
 	el: '#app',
-	router
+	router,
+	data: () => ({
+		drawer: true,
+	})
 }).$mount('#app')

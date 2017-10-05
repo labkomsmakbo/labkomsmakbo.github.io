@@ -11,7 +11,7 @@ module.exports = {
     }
 }
 
-app = new Vue({
+new Vue({
 	el: '#hello',
 })
 
