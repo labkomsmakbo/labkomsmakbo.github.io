@@ -4,7 +4,7 @@ Bar = { template: '<div>bar</div>' }
 routes = [
   { path: '/foo', component: Foo },
   { path: '/bar', component: Bar },
-  { path: '/here', component: httpVueLoader('my-component.vue') }
+  { path: '/here', component: httpVueLoader('js/my-component.vue') }
 ]
 
 router = new VueRouter({
