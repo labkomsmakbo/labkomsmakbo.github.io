@@ -3,6 +3,7 @@ Bar = { template: '<div>bar</div>' }
 
 routes = [
   { path: '/', component: httpVueLoader('components/home.vue') },
+  { path: '/tata-tertib', component: httpVueLoader('components/tata-tertib.vue') },
   { path: '/foo', component: Foo },
   { path: '/bar', component: Bar },
   { path: '/here', component: httpVueLoader('components/my-component.vue') }
@@ -20,7 +21,7 @@ app = new Vue({
 		drawer: true,
 		items: [
 			{ path: '/', text: 'Home', icon: 'home'},
-			{ path: '/tata-tertib', text: 'Tata Tertib Labkom', icon: 'apps'},
+			{ path: '/tata-tertib', text: 'Tata Tertib Labkom', icon: 'error'},
 			{ 
 				path: '/KelasX', 
 				text: 'Kelas X', 
@@ -30,12 +31,12 @@ app = new Vue({
 					{
 						path: '/hal1',
 						text: 'pertemuan1',
-						icon: 'apps'
+						icon: 'label_outline'
 					},
 					{
 						path: '/hal2',
 						text: 'pertemuan2',
-						icon: 'apps'
+						icon: 'label_outline'
 					}
 				]
 			},
@@ -47,16 +48,16 @@ app = new Vue({
 					{
 						path: '/hal1',
 						text: 'pertemuan1',
-						icon: 'apps'
+						icon: 'label_outline'
 					},
 					{
 						path: '/hal2',
 						text: 'pertemuan2',
-						icon: 'apps'
+						icon: 'label_outline'
 					}
 				]
 			},
-			{ path: '/tim-labkom', text: 'Tim Labkom SMAKBO', icon: 'apps' },
+			{ path: '/tim-labkom', text: 'Tim Labkom', icon: 'people' },
 		]
 	})
 }).$mount('#app')

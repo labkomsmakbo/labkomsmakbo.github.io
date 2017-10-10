@@ -1,5 +1,6 @@
 <template>
 	<div id="cards">
+		<v-container fill-height>
 		<v-layout row wrap>
 		    <v-flex xs12 sm6 md4 v-for="item in items" v-bind:key="item.text" pa-2>
 		      <v-card>
@@ -12,11 +13,12 @@
 		          </div>
 		        </v-card-title>
 		        <v-card-actions>
-		          <v-spacer></v-spacer><router-link :to="item.path"><v-btn primary blue class="white--text">Lanjut</v-btn></router-link>
+		          <v-spacer></v-spacer><router-link :to="item.path"><v-btn primary raised class="white--text">Lanjut</v-btn></router-link>
 		        </v-card-actions>
 		      </v-card>
 		    </v-flex>
 		  </v-layout>
+		</v-container> 
 	</div>
 </template>
 
