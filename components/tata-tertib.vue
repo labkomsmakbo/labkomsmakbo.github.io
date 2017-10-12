@@ -3,13 +3,20 @@
 		<v-container>
 		    <v-flex>
 		      <v-card dark>
-		      	<v-card-text><h6><v-chip label color="teal" text-color="white" class="title">Tata Tertib Labkom SMAKBO</v-chip></h6>
+		      	<v-card-text><h6><v-chip label color="teal" text-color="white" class="title"><v-avatar><v-icon>gavel</v-icon></v-avatar>Tata Tertib Labkom SMAKBO</v-chip></h6>
 		      		<ol>
 		      			<li>Jadwal Pembelajaran Kelas X di Lab. Komputer SMAKBO
 		      				<ul>	
 		      					<li>Satu pertemuan selama 1,5 jam</li>
 		      					<li>Pagi: Pkl. 08.00 - 9.30 WIB kecuali hari Senin mulai pukul 08.30</li>
 		      					<li>Siang: Pkl. 14.30 - 16.00 WIB</li>		 
+		      				</ul>	
+		      			</li>
+		      			<li>Jadwal Pembelajaran Kelas XI di Lab. Komputer SMAKBO
+		      				<ul>	
+		      					<li>Satu pertemuan selama 1,5 jam</li>
+		      					<li>Pagi: Pkl. 10.30 - 12.00 WIB</li>
+		      					<li>Siang: Pkl. 13.00 - 14.30 WIB</li>		 
 		      				</ul>	
 		      			</li>
 		      			<li>Seluruh siswa harus sudah siap, di depan lab.komputer 10 menit sebelum pembelajaran dimulai.</li>	
@@ -30,7 +37,7 @@
 		  <v-container>
 		  <v-flex>
 		      <v-card dark>
-		      	<v-card-text><h6><v-chip label color="red" text-color="white" class="title">Sanksi / Denda saat melanggar</v-chip></h6>
+		      	<v-card-text><h6><v-chip label color="red" text-color="white" class="title"><v-avatar class="red"><v-icon>error</v-icon></v-avatar>Sanksi / Denda saat melanggar</v-chip></h6>
 		      		<ol>
 		      			<li>Bagi siswa yang terlambat:
 		      				<ul>
@@ -53,7 +60,7 @@
 		      	</v-card-text>
 		  	</v-card>
 		  </v-flex>
-		</v-container>
+		</v-container> 
 	</div>
 </template>
 

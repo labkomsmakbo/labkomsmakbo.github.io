@@ -4,6 +4,8 @@ Bar = { template: '<div>bar</div>' }
 routes = [
   { path: '/', component: httpVueLoader('components/home.vue') },
   { path: '/tata-tertib', component: httpVueLoader('components/tata-tertib.vue') },
+  { path: '/pengenalan-erp', component: httpVueLoader('components/pengenalan-erp.vue') },
+  { path: '/odoo-erp', component: httpVueLoader('components/odoo-erp.vue') },
   { path: '/foo', component: Foo },
   { path: '/bar', component: Bar },
   { path: '/here', component: httpVueLoader('components/my-component.vue') }
@@ -23,36 +25,36 @@ app = new Vue({
 			{ path: '/', text: 'Home', icon: 'home'},
 			{ path: '/tata-tertib', text: 'Tata Tertib Labkom', icon: 'error'},
 			{ 
-				path: '/KelasX', 
-				text: 'Kelas X', 
-				icon: 'apps',
+				path: '/gnu-linux', 
+				text: 'GNU/Linux', 
+				icon: 'school',
 				model: true, 
 				items: [
 					{
-						path: '/hal1',
-						text: 'pertemuan1',
+						path: '/pengenalan-gnu-linux',
+						text: 'Pengenalan Linux',
 						icon: 'label_outline'
 					},
 					{
-						path: '/hal2',
-						text: 'pertemuan2',
+						path: '/linux-command-line',
+						text: 'Linux Command Line',
 						icon: 'label_outline'
 					}
 				]
 			},
 			{ 
-				path: '/KelasXI', 
-				text: 'Kelas XI', 
-				icon: 'apps', 
+				path: '/pengenalan-erp', 
+				text: 'Enterprise Resource Planning', 
+				icon: 'school', 
 				items: [
 					{
-						path: '/hal1',
-						text: 'pertemuan1',
+						path: '/pengenalan-erp',
+						text: 'Pengenalan ERP',
 						icon: 'label_outline'
 					},
 					{
-						path: '/hal2',
-						text: 'pertemuan2',
+						path: '/odoo-erp',
+						text: 'Odoo ERP',
 						icon: 'label_outline'
 					}
 				]

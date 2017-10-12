@@ -3,7 +3,7 @@
 <head>
  <title> Labkom SMAKBO </title>
  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
- <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
+ <link href='https://fonts.googleapis.com/css?family=Cantata+One|Imprima|Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
  <link href="https://unpkg.com/vuetify/dist/vuetify.min.css" rel="stylesheet">
 </head>
 <body>
@@ -13,7 +13,7 @@
          persistent
          clipped
          app
-         v-model="drawer"
+         v-model="drawer" style="min-width:25%;"
        >
         <v-list>
           <v-list-group v-for="item in items" :value="item.active" v-bind:key="item.title">
