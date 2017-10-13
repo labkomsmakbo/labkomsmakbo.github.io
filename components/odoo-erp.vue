@@ -37,44 +37,79 @@
 	</v-card>
 	</v-flex>
 
-		<v-flex pa-2 xs12 sm12 md12>
-		<v-card dark>
-		<v-card-title><h6><v-chip label color="red lighten-1" text-color="white" class="title"><v-avatar class=""><v-icon>error</v-icon></v-avatar>Mengatur Hak Akses</v-chip></h6></v-card-title>
-		<v-card-text>
-			<p>Sebelum mengatur produk dan tampilan toko, terlebih dahulu anda perlu mengatur hak akses untuk anggota kelompok / kerja anda. Untuk langkah ini, login terlebih dahulu ke <a href="http://erp.smakbo.sch.id">ERP SMAKBO</a> dan masuk ke halaman login dengan user dan password yang sudah disediakan bagi ketua kelompok.</p>
-		</v-card-text>
-		<v-card-media src="img/erp-04.png" height="300px" contain></v-card-media>
-		<v-card-text>
-			<p>Kemudian di Dashboard Odoo pada tab <v-chip color="orange" text-color="white">pengaturan</v-chip>, buat akun anggota kelompok / kerja anda dengan mengklik menu <v-chip color="orange" text-color="white">kelola hak akses</v-chip> Pada pengaturan pengguna, buat akun anggota kelompok dengan hak akses berbeda-beda sesuai dengan tugas masing-masing.</p>
-		</v-card-text>
-		<v-card-media src="img/erp-05.png" height="300px" contain></v-card-media>
-		<v-card-text><p>Misalnya, yang bertugas sebagai desainer situs web diberi akses sebagai editor dan desainer pada bagian situs web dan hanya hal akses karyawan pada akuntansi agar mempunyai akses ke jumlah, harga, dan deskripsi produk.</p></v-card-text>
-		<v-card-media src="img/erp-collage.jpg" height="500px" contain></v-card-media>
-		<v-card-text><p>Untuk pengaturan di awal, ketua kelompok bertindak sebagai CEO dan mempunyai hak akses sebagai administrator. Untuk tugas kelompok pada pembelajaran di Labkom, cukup di buat 4 macam akun, yaitu CEO, Akuntan, Bisnis, dan Desain.</p></v-card-text>
-		<v-card-media src="img/erp-08.png" height="300px" contain></v-card-media>
-		
-	</v-card>
-	</v-flex>
 
-		<v-flex pa-2>
-		<v-card>
-		<v-card-title><h6>Membuat deskripsi usaha dan pengaturan mata uang</h6></v-card-title>
-		<v-card-media src="" height="" contain></v-card-media>
-		<v-card-text>
-			<p>Setelah hak akses masing-masing anggota selesai di atur, mulailah bekerja dengan membuat deskripsi awal usaha anda dan mengatur mata uang yang akan digunakan saat bertransaksi (( <!--ini di halaman lain saja)) --></p>
-		</v-card-text>
-	</v-card>
-	</v-flex>
+	<v-flex pa-2 xs12 sm12 md12>
+	<v-card>
 
-		<v-flex pa-2>
-		<v-card dark>
-		<v-card-title><h6>Odoo ERP Software</h6></v-card-title>
-		<v-card-media src="img/erp-02.png" height="125px" contain></v-card-media>
-		<v-card-text>
-			<p>Odoo ERP Software Package</p>
-		</v-card-text>
-	</v-card>
-	</v-flex>
+	<template>
+	  <v-stepper v-model="e6" vertical class="">
+	  <v-card-title><h6><v-chip label color="red lighten-1" text-color="white" class="title"><v-avatar class=""><v-icon>error</v-icon></v-avatar>Mengatur Hak Akses</v-chip></h6></v-card-title>
+	    <v-stepper-step step="1" v-bind:complete="e6 > 1">Login ke Dashboard</v-stepper-step>
+	    <v-stepper-content step="1">
+	      <v-card color="" class="mb-5 elevation-0" height="">
+
+	       <v-card-media src="img/erp-11.png" height="300px" contain></v-card-media>
+
+	      <v-card-text><p>Sebelum mengatur produk dan tampilan toko, terlebih dahulu anda perlu mengatur hak akses untuk anggota kelompok / kerja anda. Untuk langkah ini, login terlebih dahulu ke <a href="http://erp.smakbo.sch.id">ERP SMAKBO</a> dan masuk ke halaman login dengan user dan password yang sudah disediakan bagi ketua kelompok.</p></v-card-text>
+	      <v-card-media src="img/erp-04.png" height="300px" contain></v-card-media>
+
+	  </v-card>
+	      <v-btn color="primary" @click.native="e6 = 2">Continue</v-btn>
+	    </v-stepper-content>
+	    <v-stepper-step step="2" v-bind:complete="e6 > 2">Membuat akun anggota kelompok</v-stepper-step>
+	    <v-stepper-content step="2">
+	      <v-card color="" class="mb-5 elevation-0" height="">
+
+	      <v-card-text>
+	      	<p>Kemudian di Dashboard Odoo pada tab <v-chip color="orange" text-color="white">pengaturan</v-chip>, buat akun anggota kelompok / kerja anda dengan mengklik menu <v-chip color="orange" text-color="white">kelola hak akses</v-chip> Pada pengaturan pengguna, buat akun anggota kelompok dengan hak akses berbeda-beda sesuai dengan tugas masing-masing.</p>
+	      </v-card-text>
+	       <v-card-media src="img/erp-05.png" height="300px" contain></v-card-media>
+	  </v-card>
+	      <v-btn color="primary" @click.native="e6 = 3">Continue</v-btn>
+	    </v-stepper-content>
+
+	    <v-stepper-step step="3" v-bind:complete="e6 > 3">Kelola hak akses masing-masing anggota bag. 1</v-stepper-step>
+	    <v-stepper-content step="3">
+	      <v-card color="" class="mb-5 elevation-0" height="">
+
+	      <v-card-text><p>Misalnya, yang bertugas sebagai desainer situs web diberi akses sebagai editor dan desainer pada bagian situs web dan hanya hal akses karyawan pada akuntansi agar mempunyai akses ke jumlah, harga, dan deskripsi produk.</p></v-card-text>
+	      <v-card-media src="img/erp-collage.jpg" height="500px" contain></v-card-media>
+	      <v-card-text><p>Untuk pengaturan di awal, ketua kelompok bertindak sebagai CEO dan mempunyai hak akses sebagai administrator. Untuk tugas kelompok pada pembelajaran di Labkom, cukup di buat 4 macam akun, yaitu CEO, Akuntan, Bisnis, dan Desain.</p></v-card-text>
+	      <v-card-media src="img/erp-08.png" height="300px" contain></v-card-media>
+	  </v-card>
+	      <v-btn color="primary" @click.native="e6 = 4">Continue</v-btn>
+	    </v-stepper-content>
+
+	    <v-stepper-step step="4" v-bind:complete="e6 > 4">Kelola hak akses masing-masing anggota bag. 2</v-stepper-step>
+	    <v-stepper-content step="4">
+	      <v-card color="" class="mb-5 elevation-0" height="">
+	      <v-card-media src="img/erp-09.png" height="300px" contain></v-card-media>
+	  </v-card>
+	      <v-btn color="primary" @click.native="e6 = 5">Continue</v-btn>
+	    </v-stepper-content>
+
+	    <v-stepper-step step="5" v-bind:complete="e6 > 5">Kelola hak akses masing-masing anggota bag. 3</v-stepper-step>
+	    <v-stepper-content step="5" >
+	      <v-card color="" class="mb-5 elevation-0" height="">
+	      <v-card-media src="img/erp-10.png" height="300px" contain></v-card-media>
+	  </v-card>
+	      <v-btn color="primary" @click.native="e6 = 6">Continue</v-btn>
+	    </v-stepper-content>
+
+	     <v-stepper-step step="6" v-bind:complete="e6 > 6">Profil Perusahaan</v-stepper-step>
+	    <v-stepper-content step="6" >
+	      <v-card color="" class="mb-5 elevation-0" height="">
+	      <v-card-media src="img/erp-12.png" height="300px" contain></v-card-media>
+	      <v-card-text><p>Untuk data profil perusahaan, akun CEO bertugas menetapkan nama perusahaan, alamat (alamat yang digunakan alamat SMAKBO), serta mata uang yang digunakan (Rupiah), desainer bertugas mendesain situs penjualan, dan akun bisnis/akuntan membuat produk yang akan di jual (4 kategori dan minimal 10 produk).</p></v-card-text>
+	  </v-card>
+	      <v-btn color="primary" @click.native="e6 = 1">Continue</v-btn>
+	    </v-stepper-content>
+
+	  </v-stepper>
+	</template>
+
+</v-card>
+</v-flex>
 
 	</v-layout>
 	</v-container>
@@ -97,7 +132,8 @@ module.exports = {
     			{ text: 'Website Builder'},
     			{ text: 'eCommerce'},
     			{ text: 'Calendar'}
-            ]
+            ],
+            e6: 1
         }
     }
 }

@@ -34,7 +34,7 @@
 		  </v-container>
 
 		 
-		  <v-container>
+		  <!-- <v-container>
 		  <v-flex>
 		      <v-card dark>
 		      	<v-card-text><h6><v-chip label color="red" text-color="white" class="title"><v-avatar class="red"><v-icon>error</v-icon></v-avatar>Sanksi / Denda saat melanggar</v-chip></h6>
@@ -60,7 +60,7 @@
 		      	</v-card-text>
 		  	</v-card>
 		  </v-flex>
-		</v-container> 
+		</v-container> -->
 	</div>
 </template>
 
