@@ -100,7 +100,7 @@
 	    <v-stepper-content step="6" >
 	      <v-card color="" class="mb-5 elevation-0" height="">
 	      <v-card-media src="img/erp-12.png" height="300px" contain></v-card-media>
-	      <v-card-text><p>Untuk data profil perusahaan, akun CEO bertugas menetapkan nama perusahaan, alamat (alamat yang digunakan alamat SMAKBO), serta mata uang yang digunakan (Rupiah), desainer bertugas mendesain situs penjualan, dan akun bisnis/akuntan membuat produk yang akan di jual (4 kategori dan minimal 10 produk).</p></v-card-text>
+	      <v-card-text><p>Untuk data profil perusahaan, akun CEO bertugas menetapkan nama perusahaan, alamat (alamat yang digunakan alamat SMAKBO), serta mata uang yang digunakan (Rupiah).</p></v-card-text>
 	  </v-card>
 	      <v-btn color="primary" @click.native="e6 = 1">Continue</v-btn>
 	    </v-stepper-content>
