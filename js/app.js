@@ -6,6 +6,7 @@ routes = [
   { path: '/tata-tertib', component: httpVueLoader('components/tata-tertib.vue') },
   { path: '/pengenalan-erp', component: httpVueLoader('components/pengenalan-erp.vue') },
   { path: '/odoo-erp', component: httpVueLoader('components/odoo-erp.vue') },
+  { path: '/tim-labkom', component: httpVueLoader('components/tim-labkom.vue')},
   { path: '/foo', component: Foo },
   { path: '/bar', component: Bar },
   { path: '/here', component: httpVueLoader('components/my-component.vue') }
