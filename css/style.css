@@ -1,0 +1,15 @@
+.centre	{
+	text-align: center;
+	margin: auto;
+	width: auto;
+	height: auto;
+}
+
+li {
+	display: inline;
+}
+
+ul {
+	display: block;
+}
+
