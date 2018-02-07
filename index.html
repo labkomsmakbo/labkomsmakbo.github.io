@@ -1,77 +1,8 @@
-<!DOCTYPE html>
 <html>
 <head>
- <title> Labkom SMAKBO </title>
- <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
- <link href='https://fonts.googleapis.com/css?family=Cantata+One|Imprima|Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
- <link href="https://unpkg.com/vuetify/dist/vuetify.min.css" rel="stylesheet">
+  <title>labkom smakbo</title>
 </head>
 <body>
- <div id="app">
-   <v-app>
-   <v-navigation-drawer
-         persistent
-         clipped
-         app
-         v-model="drawer" style="min-width:25%;"
-       >
-        <v-list>
-          <v-list-group v-for="item in items" :value="item.active" v-bind:key="item.title">
-            <v-list-tile slot="item" @click="" router-link :to="item.path">
-              <v-list-tile-action>
-                <v-icon>{{ item.icon }}</v-icon>
-              </v-list-tile-action>
-              <v-list-tile-content>
-                <v-list-tile-title>{{ item.text }}</v-list-tile-title>
-              </v-list-tile-content>
-              <v-list-tile-action>
-                <v-icon>keyboard_arrow_down</v-icon>
-              </v-list-tile-action>
-            </v-list-tile router-link>
-                          <v-list-tile v-for="subItem in item.items" v-bind:key="subItem.text" @click="" router-link :to="subItem.path">
-                          <v-list-tile-content>
-                            <v-list-tile-title>{{ subItem.text }}</v-list-tile-title>
-                          </v-list-tile-content>
-                          <v-list-tile-action>
-                            <v-icon>{{ subItem.icon }}</v-icon>
-                          </v-list-tile-action>
-                        </v-list-tile router-link>
-            </v-list-group>
-          </v-list>
-    </v-navigation-drawer>
-    <v-toolbar
-          class="blue darken-3"
-          dark
-          app
-          clipped-left
-          fixed
-        >
-          <v-toolbar-title style="" class="ml-0 pl-3">
-                  <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-                  Laboratorium Komputer SMAKBO
-                </v-toolbar-title>
-    </v-toolbar>
-     <main>
-      <v-content>
-       
-         <router-view></router-view>
-   		
-      </v-content>
-     </main>
-    <v-footer></v-footer>
-   </v-app>
- </div>
- 
- <!-- <script src="https://unpkg.com/vue/dist/vue.js"></script> -->
- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue@2.4.4/dist/vue.min.js"></script>
- 
- <!-- <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script> -->
- <script type="text/javascript" src="https://unpkg.com/vue-router@2.7.0/dist/vue-router.min.js"></script>
-
- <script src="https://unpkg.com/http-vue-loader"></script>
-
- <!-- <script src="https://unpkg.com/vuetify/dist/vuetify.js"></script> -->
- <script type="text/javascript" src="https://unpkg.com/vuetify@0.16.5/dist/vuetify.min.js"></script>
- <script type="text/javascript" src="js/app.js"></script>
+  <h1>hello world</h1>
 </body>
 </html>
