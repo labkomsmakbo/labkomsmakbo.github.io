@@ -1,75 +1,13 @@
-@font-face {
-	font-family: ComicNeue;
-	src: url(ComicNeue-Regular.ttf);
-}
-
 body {
-	margin: 20px;
-	font-family: ComicNeue;
-	background-image: url(logosmakbook2.png);
-}
-.centre	{
-	text-align: center;
-	margin: auto;
-	width: auto;
-	height: auto;
-}
-
-li {
-	display: inline-block;
-}
-
-ul {
-	display: block;
-}
-
-.marquee {
-  height: 2em;
-  width: 98%;
-  border: dotted;
-  overflow: hidden;
-  position: relative;
-}
-
-.marquee div {
-  display: block;
-  width: 200%;
-  height: 30px;
-
-  position: absolute;
-  overflow: hidden;
-
-  animation: marquee 13s linear infinite;
-}
-
-.marquee span {
-  float: left;
-  width: 50%;
-  font-size: 1.4em;
-  font-family: 'Pacifico', cursive;
-}
-
-@keyframes marquee {
-  0% { left: 100%; }
-  50% {opacity: 0;}
-  100% { left: 0%; }
-}
-
-.navbar {
-	list-style-type: none;
+	background: linear-gradient(135deg, #1fb3cf 0, #304999 100%);
+	background-attachment: fixed;
+	font-family: 'Playfair Display', serif;
 	font-size: 2em;
-	margin:0;
-	padding:0;
+	color: white;
 }
 
-.navbar li a {
-	display: block;
-	border-radius: 25px;
-	background: linear-gradient(to right , red,orange,yellow,green,blue,indigo,violet);
-	color: brown;
-}
-
-.navbar li a:hover {
-	background-color: #555;
-    color: white;
+h1, h2, h3 {
+	font-family: 'Comfortaa', cursive;
+	font-size:2em;
+	color: white;
 }
