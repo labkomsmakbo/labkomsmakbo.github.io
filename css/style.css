@@ -1,13 +1,13 @@
 body {
 	background: linear-gradient(135deg, #1fb3cf 0, #304999 100%);
 	background-attachment: fixed;
-	font-family: 'Playfair Display', serif;
+	font-family: 'Merriweather Sans', sans-serif;
 	font-size: 2em;
 	color: white;
 }
 
-h1, h2, h3 {
-	font-family: 'Comfortaa', cursive;
+.judul {
+	font-family: 'Lora', serif;
 	font-size:2em;
 	color: white;
 }
