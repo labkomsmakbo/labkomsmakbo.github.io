@@ -1,13 +1,20 @@
 body {
 	background: linear-gradient(135deg, #1fb3cf 0, #304999 100%);
 	background-attachment: fixed;
-	font-family: 'Merriweather Sans', sans-serif;
+	font-family: 'Play', sans-serif;
 	font-size: 2em;
 	color: white;
 }
 
+@font-face {
+	font-family: myFont;
+	src: url('HVD_Comic_Serif_Pro.otf');
+} 
+
 .judul {
-	font-family: 'Lora', serif;
-	font-size:2em;
+	font-family: 'myFont', serif;
+	font-size: 2em;
 	color: white;
 }
+
+
