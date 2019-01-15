@@ -1,6 +1,6 @@
 <div class="ui container"><h1 class="judul">LabKom | SMAKBO</h1></div>
-	<div class="ui compact container">
-	  <div class="ui simple dropdown item">
+	<div class="ui compact container">	
+	  <div class="ui dropdown">
 	    <i class="fas fa-folder-open"></i> Kelas X
 	    <div class="menu">
 	      <div class="item">Sistem Operasi Linux</div>
@@ -9,7 +9,7 @@
 	      <div class="item">Google Drive</div>
 	    </div>
 	  </div> - 
-	  <div class="ui simple dropdown item">
+	  <div class="ui dropdown">
 		<i class="fas fa-folder-open"></i> Kelas XI
 	    <div class="menu">
 	      <div class="item">Analisis Data</div>
@@ -18,7 +18,7 @@
 	      <div class="item">HTML & CSS</div>
 	    </div>
 	  </div> - 
-	  <div class="ui simple dropdown item">
+	  <div class="ui dropdown">
 	    <i class="fas fa-file-alt"></i> Dokumen LabKom
 	    <div class="menu">
 	      <div class="item">Tata Tertib</div>
@@ -26,7 +26,7 @@
 	      <div class="item">Silabus</div>
 	    </div>
 	  </div> - 
-	  <div class="ui simple dropdown item">
+	  <div class="ui dropdown">
 	    <i class="fas fa-users"></i> Kontak
 	    <div class="menu">
 	      <div class="item">Meti Kurnia S.</div>
@@ -34,7 +34,12 @@
 	      <div class="item">Mohamad Tachya</div>
 	      <div class="item">Galih Santosa</div>
 	      <div class="item">Jaja Sonjaya</div>
-	      <div class="item">Heri Setiawan</div>
 	    </div>
 	  </div>
 	</div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+	    $('.ui .dropdown').dropdown();
+	});
+</script>
