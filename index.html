@@ -1,22 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-	<title></title>
-	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/semantic.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body>
-	<div id="navbar"></div>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<div class="ui container">
-		
+		<title>Labkom SMAKBO</title>
 
-	</div>
-	</div>
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="css/semantic.min.js"></script>
-	<script src="js/app.js"></script>
-</body>
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section><span class="judul"></span></section>
+				<section>
+					<em>Linux Mint</em><em style="color:red;"> - LibreOffice Writer</em><em> - LibreOffice Calc</em><em style="color:red;"> - Google Drive</em><em> - BKChem</em><em style="color:red;"> - GIMP</em><em> - HTML</em><em style="color:red;"> - CSS</em><em> - Analisis Data</em><em style="color:red;"> - ERP</em>
+				</section>
+				<section>
+					<em>Tata Tertib</em><em style="color:turquoise;"> - Silabus</em><em> - RPP</em><em style="color:turquoise;"> - Kontak</em>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				transition: 'fade',
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+
+		</script>
+
+		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+
+		<script type="text/javascript">
+
+		  var typed = new Typed(".judul", {
+		    strings: ['Labkom^1000\n SMAKBO'],
+		    smartBackspace: false,
+		    typeSpeed: 40,
+		  });
+
+		</script>
+
+	</body>
 </html>
