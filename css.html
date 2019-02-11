@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Labkom SMAKBO</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<section>
+					<h1>CSS</h1>
+					<p>CSS (Cascading Style Sheet) merupakan bahasa yang digunakan untuk mendeskirpsikan elemen HTML. Tugas HTML ada membuat elemen pada laman web, sedangkan tugas CSS adalah mengatur tampilan dari elemen tersebut. Contohnya: kita dapat membuat sebuah tombol dengan menggunakan tag HTML 'button', dengan CSS kita dapat mengatur warna bentuk, dan tampilan pada tombol tersebut.</p>
+					</section>
+					<section>
+						<p>CSS pertama di usulkan oleh Hakon Wium Lie dan Bert Bos tahun 1994 yang dimana mereka juga bekerja bersama Tim Berners-Lee (penggagas HTML). CSS diciptakan untuk memisahkan penulisan tampilan halaman dengan konten halaman sehingga memudahkan pengaturan saat menulis halaman web yang panjang atau kompleks.</p><p><a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets#History">sumber</a></p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Penulisan CSS</h1>
+					<p>CSS mempunyai bentuk penulisan sepeti berikut</p>
+					<p><pre><code class="css">h1 {color: red;}</code></pre></p>
+					<p>kode di atas mempunyai beberapa elemen yaitu; h1 -> sebagai selector, color -> sebagai property, dan red -> sebagai value</p><p>sebagai aturan umum, kita menulis elemen yang kita seleksi, kemudian dalam kurung, kita tulis properti yang akan kita ubah dengan nilai yang kita tentukan value-nya. misalnya sebuah teks kita rubah warnanya, gambar kita berikan bingkai, dsb</p>
+					</section>
+					<section>
+						<p>Penulisan CSS dapat dilakukan dengan tiga cara: inline, internal, dan eksternal.</p>
+						<ul>
+						<li>Contoh inline: (dilakukan langsung pada elemen dengan atribut style)
+						<p><pre><code class="html"><h1 style="color:red;">sebuah heading</h1></code></pre></p></li>
+						<li>Contoh internal: (ditulis dalam tag 'head' menggunakan tag 'style')</p>
+						<p><pre><code class="css"><style type="text/css">h1 {color:red;}</style></code></pre></p>
+						<p><pre><code class="css"><h1>sebuah heading</h1></code></pre></p></li>
+						</ul>
+					</section>
+					<section> 
+						<p>Dan yang terakhir; eksternal (ditulis di dalam file lain dan di hubungkan dengan tag 'link')</p>
+						<p><pre><code class="css"><link rel="stylesheet" type="text/css" href="filecss.css"></code></pre></p>
+						<p>contoh di atas, kita tuliskan tag link dalam tag head pada halaman html yang menunjuk pada file css, untuk penulisan css eksternal, kita tuliskan pengaturan css dalam file yang berbeda.</p>
+					</section>
+				</section>
+				<section>
+					<section>
+					<h1>Selector CSS</h1>
+					<p>Selector pada CSS juga mempunyai beberapa fitur. jika kita menuliskan tag html pada selector, maka seluruh elemen yang sama pada halaman tersebut akan berubah. Misalnya kita memberikan tag paragraf dengan warna font putih, maka seluruh paragraf akan berwara putih. Karena itu, untuk mengatur ini, kita dapat membuat selector sendiri menggunakan class (dengan tanda titik '.') atau id (tanda pagar '#')</p>
+					</section>
+					<section>
+						<h2>Class Selector</h2>
+						<p>kita dapat menciptakan selektor sendiri dan memberikan atribut class pada tag html. contoh:</p>
+						<p><pre><code class="css">.merah {color:red;}</code></pre></p>
+						<p><pre><code class="html"><p class="merah">paragraf berwarna merah</p></code></pre></p>
+						<p><pre><code class="html"><p class="biru">paragraf tidak merah</p></code></pre></p>
+						<p>contoh di atas kita menulisan kode css dengan class '.merah' dan pada sebuah paragraf kita berikan atribut class dengan value merah, dan paragraf lain dengan class biru.</p>
+					</section>
+					<section>
+						<h2>ID Selector</h2>
+						<p>ID selector berfungsi sama seperti class selector, tetapi menggunakan tanda pagar (#), atribut id, dan hanya berlaku pada satu elemen pada halaman contoh:</p>
+						<p><pre><code class="css">#biru {color:blue;}</code></pre></p>
+						<p><pre><code class="html"><p class="merah">paragraf berwarna merah</p></code></pre></p>
+						<p><pre><code class="html"><p id="biru">paragraf menjadi biru karena id selector</p></code></pre></p>
+						<p>contoh di atas kita menulisan kode css dengan id = #biru.</p>
+						<p><a href="https://www.w3schools.com/css/css_syntax.asp">sumber</a></p>
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				transition: 'fade',
+				maxScale: 0.6,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
